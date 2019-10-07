@@ -1,19 +1,18 @@
 # TO-DO: Complete the selection_sort() function below 
 def selection_sort( arr ):
     # loop through n-1 elements
-    for i in range(0, len(arr) - 1):
-        cur_index = i
-        smallest_index = cur_index
-        # TO-DO: find next smallest element
-        # (hint, can do in 3 loc) 
-             
-
-
-
-        # TO-DO: swap
-
-
-
+    for numba in range(len(arr)-1):
+        temp = arr[numba]
+        for i in range(1+numba, len(arr)):
+            if temp > arr[i]:
+                # Put to temp2 variable
+                temp2 = arr[i]
+                # Replace el in current list, l, with the temp varialbe
+                arr[i] = temp
+                # Replace temp with current lowest 
+                temp = temp2
+        # Replace list's number
+        arr[numba] = temp
 
     return arr
 
