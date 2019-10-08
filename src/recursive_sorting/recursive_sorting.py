@@ -2,6 +2,7 @@
 def merge( arrA, arrB ):
     merged_arr = []
     
+    # Check length for each each list
     while len(arrA) != 0 or len(arrB) != 0:
         if len(arrA)== 0 and len(arrB) == 0:
             return merged_arr
@@ -40,7 +41,9 @@ def merge( arrA, arrB ):
 
 # TO-DO: implement the Merge Sort function below USING RECURSION
 def merge_sort( arr ):
-    if len(arr) == 1:
+    if len(arr) == 0:
+        return arr
+    elif len(arr) == 1:
         return arr
     else:
         # Divide the list to half until we get single list of elements
