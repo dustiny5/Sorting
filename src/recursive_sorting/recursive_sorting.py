@@ -6,7 +6,6 @@ def merge( arrA, arrB ):
     while len(arrA) != 0 or len(arrB) != 0:
         if len(arrA)== 0 and len(arrB) == 0:
             return merged_arr
-            break
 
         elif len(arrA) == 0 and len(arrB) == 1:
             merged_arr.append(arrB[0])
