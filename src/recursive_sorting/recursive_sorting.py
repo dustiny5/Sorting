@@ -36,9 +36,7 @@ def merge( arrA, arrB ):
 
 # TO-DO: implement the Merge Sort function below USING RECURSION
 def merge_sort( arr ):
-    if len(arr) == 0:
-        return arr
-    elif len(arr) == 1:
+    if len(arr) == 0 or len(arr) == 1:
         return arr
     else:
         # Divide the list to half until we get single list of elements
