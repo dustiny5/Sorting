@@ -2,7 +2,7 @@
 def merge( arrA, arrB ):
     merged_arr = []
     
-    # Check length for each each list
+    # Check length for each list
     while len(arrA) != 0 or len(arrB) != 0:
         if len(arrA)== 0 and len(arrB) == 0:
             return merged_arr
